@@ -8,6 +8,8 @@
 4 stampa un messaggio appropriato sull’esito del controllo, utilizzando un ciclo for. 
 Non è consentito usare nessun metodo proprio degli array (come includes, per esempio).*/
 
+let list = ["a@gmail.com", "b@gmail.com", "c@gmail.com", "d@gmail.com"];
+
 /* 
 Gioco dei dadi
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto.
