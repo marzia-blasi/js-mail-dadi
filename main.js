@@ -6,17 +6,16 @@
 3 controlla che sia nella lista di chi può accedere, 
 - servirà un === 
 4 stampa un messaggio appropriato sull’esito del controllo, utilizzando un ciclo for. 
-Non è consentito usare nessun metodo proprio degli array (come includes, per esempio).
+Non è consentito usare nessun metodo proprio degli array (come includes, per esempio).*/
 
 let list = ["a@gmail.com", "b@gmail.com", "c@gmail.com", "d@gmail.com"];
 
-let validation = prompt("mail");
-console.log(validation);*/
+//let validation = prompt("mail");
+//console.log(validation);
 
-for (let i = 0; i < 4; i++) {
-  // mo' ho riscritto quella semplice, ma comunque mi da errore
-
-  console.log(i); // perchè mi da errore
+for (let i = 0; i < list.length; i++) {
+  const mail = list[i]; // singolo elemento di list
+  console.log(mail);
 }
 
 // if (validation === elemento di list); mi serve che i (del ciclo for, diventi ogni elemento di list)
