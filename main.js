@@ -4,18 +4,29 @@
 2 Chiedi all’utente la sua email, 
 - prompt
 3 controlla che sia nella lista di chi può accedere, 
+- dovrebbe dire qualcosa tipo: 
+- SE il prompt ha la stessà identità === di un elemento dell'array 
 - servirà un === 
 4 stampa un messaggio appropriato sull’esito del controllo, utilizzando un ciclo for. 
 Non è consentito usare nessun metodo proprio degli array (come includes, per esempio).*/
 
 let list = ["a@gmail.com", "b@gmail.com", "c@gmail.com", "d@gmail.com"];
 
-//let validation = prompt("mail");
-//console.log(validation);
+let validation = prompt("inserire mail");
+console.log(validation);
 
 for (let i = 0; i < list.length; i++) {
   const mail = list[i]; // singolo elemento di list
-  console.log(mail);
+  //console.log(mail);
+  if (validation === mail) {
+    validation = true;
+  }
+}
+
+if (validation === true) {
+  console.log("sei invitato");
+} else {
+  console.log("non sei invitato");
 }
 
 // if (validation === elemento di list); mi serve che i (del ciclo for, diventi ogni elemento di list)
