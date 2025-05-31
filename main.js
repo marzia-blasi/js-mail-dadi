@@ -6,12 +6,22 @@
 3 controlla che sia nella lista di chi può accedere, 
 - servirà un === 
 4 stampa un messaggio appropriato sull’esito del controllo, utilizzando un ciclo for. 
-Non è consentito usare nessun metodo proprio degli array (come includes, per esempio).*/
+Non è consentito usare nessun metodo proprio degli array (come includes, per esempio).
 
 let list = ["a@gmail.com", "b@gmail.com", "c@gmail.com", "d@gmail.com"];
 
 let validation = prompt("mail");
-console.log(validation);
+console.log(validation);*/
+
+for (let i = 0; i < 4; i++) {
+  // mo' ho riscritto quella semplice, ma comunque mi da errore
+
+  console.log(i); // perchè mi da errore
+}
+
+// if (validation === elemento di list); mi serve che i (del ciclo for, diventi ogni elemento di list)
+// tutto ok
+// else messaggio di alert non invitato
 
 /* 
 Gioco dei dadi
@@ -23,4 +33,18 @@ javascript non fa nulla da solo, dobbiamo dirgli noi cosa vogliamo fare
 si ma noi cosa vogliamo fare?
 torniamo a scrivere in italiano
 proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano" 
+
+- usare random (si può impostare da 1 a 6 - verificare )
+- if random mio  >  di random tuo etc
  */
+
+let utente = Math.floor(Math.random() * 6) + 1;
+let pc = Math.floor(Math.random() * 6) + 1;
+
+if (utente > pc) {
+  console.log("ha vinto l'umanità");
+} else if ((utente = pc)) {
+  console.log("pareggio");
+} else {
+  console.log("l'era dei robot ha inizio!");
+}
